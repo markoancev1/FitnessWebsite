@@ -1,0 +1,377 @@
+$goldColor: #d9bf77;
+$pricesColor: #faf7ef;
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+.gold-span{
+    color: $goldColor;
+    letter-spacing: 3px;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+button{
+    padding: 1rem 2rem;
+    font-size: .9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid $goldColor;
+    
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+.section-padding {
+    padding: 5rem 0;
+}
+.btn-gold{
+    background-color: $goldColor;
+    color: white;
+    &:hover{
+    background-color: transparent;
+    color: $goldColor;
+    }
+}
+.btn-outline-gold{
+    background-color: transparent;
+    color: $goldColor;
+    &:hover{
+    background-color: $goldColor;
+    color: white;
+    }
+}
+header{
+    .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+        color: $goldColor;
+    }
+    nav{
+        .navbar-brand{
+            padding-top: 0;
+            padding-bottom: 0;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+            color: $goldColor !important;
+        }
+        a{
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-size: .7rem;
+        }
+        .colapse ul .activeBS  a{
+            color: $goldColor;
+        }
+        #navbarBS{
+            a{
+                margin-left: 1rem;
+            }
+        }
+        .navbar-toggler{
+            margin: 0;
+            width: 60px;
+        }
+    }
+    height: 100vh;
+    background-image: url("../img/background1.jpg");
+    padding-top: 10rem;
+    img{
+        height: 150px;
+        width: 150px;
+    }
+    hr{
+        margin: 0 auto;
+        border-width: 2px;
+        border-color: $goldColor;
+        width: 30%;
+    }
+    h1 {
+        color: $goldColor;
+        font-family: "Prata", serif;
+        letter-spacing: .5rem;
+        width: 50%;
+        margin: 1rem auto 2rem auto;
+        text-transform: uppercase;
+    }
+    button{
+        margin: 2rem .5rem;
+    }
+}
+#section-one {
+    background-image: url("../img/banner-4.jpg");
+    background-position: center;
+    background-size: cover;
+    color: lightgray;
+    h2{
+        text-transform: capitalize;
+        font-size: 3rem;
+    }
+    p{
+        margin: 2rem 0;
+    }
+    ul{
+        li{
+            color: $goldColor;
+            margin: 2rem 0;
+        }
+    }
+}
+#section-two {
+    background: linear-gradient(to bottom, #000 0%, #444 42%, #6a6a6a 100%);
+    color: lightgray;
+    .card {
+        background-color: transparent;
+        text-align: center;
+        border: none;
+        img {
+            height: 220px;
+            width: 250px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        a{
+            display: inline-block;
+            background-color: white;
+            color: #000;
+            font-size: .7rem;
+            letter-spacing: 3px;
+            font-weight: 500;
+            text-transform: uppercase;
+            padding: 0.8rem 1.2rem;
+            margin-top: 1rem;
+            &:hover{
+                background-color: $goldColor;
+                color: white;
+            }
+        } 
+    }  
+}
+#section-three{
+    text-align: center;
+    h2{
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+    .bg-gold{
+        background-color: $pricesColor;
+        &:hover{
+            transform: scale(1.2);
+            z-index: 1;
+        }
+    }
+    .col-md-6 {
+        padding: 0;
+    }
+    .col-md-4 {
+        padding: 2rem;
+    }
+    .card {
+        border-radius: 0;
+        &:hover{
+            transform: rotate(-55deg);
+        }
+    }
+    .card img{
+        height: 40px;
+        width: 40px;
+    }
+    .prices-container {
+        height: 100%;
+        p{
+            color: lightgray;
+        }
+        table{
+            width: 100%;
+            margin-top: 2rem;
+            font-size: .9rem;
+            td {
+                text-align: left;
+                padding: .5rem 0;
+                
+            }
+        }
+    }
+}
+#section-four{
+    padding: 7rem 0 10rem 0; 
+    background-color: #343a40;
+    h2{
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
+    }
+    .card {
+        position: relative;
+        &:hover{
+            transform: scale(1.2);
+            z-index: 1;
+        }
+        h3{
+            color: $goldColor;
+            font-size: 3rem;
+            margin: 1.5rem 0
+        }
+        span{
+            text-transform: uppercase;
+            font-size: .8rem;
+        }
+        a{
+            &:hover{
+                color: gray;
+            }
+        }
+        h6{
+            color: #a2a2a2;
+            margin: 1rem 0;
+        }
+        p{
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: .9rem;
+        }
+        ul{
+            margin-bottom: 3rem;
+            li{
+                color: #a2a2a2;
+                margin: .7rem 0;
+            }
+        }
+        button{
+           position: absolute;
+           bottom: -1.5rem;
+           left: 10%;
+           right: 10%;
+           width: 80%;
+           &:hover{
+               background-color: #eed07f;
+               border-color: #eed07f;
+               color: white;
+           }
+        }
+    }
+}
+#section-five{
+    h2{
+        color: #a2a2a2;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        font-weight: 300;
+    }
+    img{
+        height: 25vh;
+        width: 100%;
+    }
+}
+footer{
+    color: #a2a2a2;
+    font-size: .9rem;
+    padding-bottom: 1.5rem !important;
+    border-top: 1px solid rgba(211, 211, 211, .5);
+    h5{
+        color: black;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    a{
+        &:hover{
+            color: gray;
+        }
+    }
+    .social-links{
+        padding: 1rem 0;
+        a{
+            margin: 0 1rem;
+        }
+        .facebook{
+            color: #4267b2;
+        }
+        .twitter{
+            color: #1d9ff3;
+        }
+        .google-plus{
+            color: #dc4a3d;
+        }
+        .linked-in{
+            color: #2866ac;
+        }
+        .dribble {
+            color: #c71d5e;
+        }
+    }
+    .copyrights{
+        border-top: 1px solid #a2a2a2;
+        padding-top: 2rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    header{
+        h1{
+            width: 90%;
+            font-size: 1.7rem;
+        }
+        button{
+            width: 90%;
+            margin: .5rem 0;
+        }
+        nav{
+            .navbar-brand{
+                margin: 0;
+            }
+                a{
+                    font-size: 1rem;
+                    margin-top: 1rem;
+                }
+        }
+    }
+    #section-two{
+        .card{
+            img{
+                width: 170px;
+                height: 170px;
+            }
+        }
+    }
+    #section-three{
+        .card{
+            border: none;
+        }
+        .card, .bg-gold{
+            &:hover{
+                transform: none;
+            }
+        }
+    }
+    #section-four{
+        .card{
+            margin-bottom: 3rem;
+            &:hover{
+                transform: none;
+            }
+        }
+    }
+    #section-five{
+        h2{
+            font-size: 2rem;
+        }
+    }
+    footer{
+        .container{
+            .row{
+                display: flex;
+                flex-flow: column;
+                .popular-links{
+                    order: 2;
+                }
+                .quick-links{
+                    order: 3;
+                }
+                .have-a-question{
+                    order: 4;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+}
